@@ -45,3 +45,22 @@ no AWS credentials:
   }
 }
 ```
+
+If everything is operating correctly (e.g. credentials are available 
+and valid), then the following response will be observed:
+
+```
+{
+  "deadlocks": {
+    "healthy": true,
+    "duration": 0,
+    "timestamp": "2022-09-30T14:46:37.002-07:00"
+  },
+  "s3-stuff": {
+    "healthy": true,
+    "message": "Buckets are visible: mode.production",
+    "duration": 377,
+    "timestamp": "2022-09-30T14:46:37.380-07:00"
+  }
+}
+```
